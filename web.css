@@ -1,0 +1,129 @@
+/* Reset margins and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo img {
+    max-height: 60px;
+  }
+  
+  .college-info {
+    margin-left: 20px;
+  }
+  
+  nav {
+    background-color: #444;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    position: relative; /* Needed for submenu positioning */
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 4px;
+  }
+  
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin: 0;
+  }
+  
+  .submenu li a {
+    padding: 8px 12px;
+    color: white;
+    display: block;
+  }
+  
+  .menu li a:hover,
+  .submenu li a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-links a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start; /* better alignment on small screens */
+    }
+  
+    .logo {
+      margin-bottom: 1rem; /* fixed typo: 'irem' → '1rem' */
+    }
+  
+    nav .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .submenu {
+      position: static;
+      padding-left: 20px;
+    }
+  }
+  
+  
