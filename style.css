@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(255, 215, 215);
+}
+.f{
+    display: block;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.s{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    height: 400px;
+    
+}
+
+.sign-up{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 18px;
+    text-align: center;
+}
+
+.sign-in{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 18px;
+    text-align: center;
+}
+.start{
+    text-align: center;
+    margin: auto;
+}

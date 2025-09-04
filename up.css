@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(184, 222, 255);
+    text-align: center;
+}
+.b{
+    display: block;
+    height: 150px;
+    margin: auto;
+    border-radius: 50px;
+}
